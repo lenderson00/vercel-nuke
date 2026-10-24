@@ -1,0 +1,14 @@
+{
+  "name": "vercel-nuke-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Headless browser tests and asset generation for Vercel Nuke.",
+  "scripts": {
+    "test": "node run-test.js",
+    "og": "node render-og.js"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "puppeteer": "^25.16.0"
+  }
+}

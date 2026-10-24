@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html,body{ width:1200px; height:630px; }
+  body{
+    position:relative; overflow:hidden; background:#0a0a0a;
+    font-family:"Inter","Helvetica Neue",Arial,"DejaVu Sans",sans-serif;
+    color:#fafafa;
+    background-image:
+      radial-gradient(900px 620px at 18% 118%, rgba(255,90,95,0.16), transparent 60%),
+      radial-gradient(820px 560px at 88% -12%, rgba(255,255,255,0.06), transparent 60%);
+  }
+  .grain{ position:absolute; inset:0; opacity:.035; mix-blend-mode:screen;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .frame{ position:relative; z-index:1; height:100%; padding:72px 80px; display:flex; flex-direction:column; justify-content:space-between; }
+  .brand{ display:flex; align-items:center; gap:16px; }
+  .mark{ width:52px; height:52px; border-radius:14px; background:#fafafa; display:flex; align-items:center; justify-content:center; }
+  .mark svg{ width:30px; height:30px; }
+  .brand .name{ font-size:28px; font-weight:600; letter-spacing:-.02em; }
+  .body{ max-width:1000px; }
+  .eyebrow{ display:inline-flex; align-items:center; gap:10px; height:40px; padding:0 18px; border-radius:999px;
+    border:1px solid rgba(255,255,255,.14); background:#151515; color:#b5b5b5; font-size:18px; font-weight:500; margin-bottom:28px; }
+  .eyebrow .pip{ width:9px; height:9px; border-radius:50%; background:#4ade80; }
+  h1{ font-size:92px; line-height:1.02; font-weight:680; letter-spacing:-.04em; }
+  .sub{ margin-top:26px; font-size:30px; line-height:1.4; color:#9a9a9a; max-width:860px; }
+  .foot{ display:flex; align-items:center; gap:14px; color:#6a6a6a; font-size:22px; }
+  .foot .tri{ color:#ff5a5f; font-size:18px; }
+</style>
+</head>
+<body>
+  
+  <div class="frame">
+    <div class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="#0a0a0a"><path d="M12 2L22 20H2L12 2z"/></svg></span>
+      <span class="name">Vercel Nuke</span>
+    </div>
+    <div class="body">
+      <span class="eyebrow"><span class="pip"></span> <span id="eyebrow"></span></span>
+      <h1 id="title"></h1>
+      <p class="sub" id="sub"></p>
+    </div>
+    <div class="foot"><span class="tri">&#9650;</span> <span id="foot">vercel-nuke.vercel.app</span></div>
+  </div>
+<script>
+  var D={
+    en:{ eyebrow:"Open source \u00b7 runs in your browser", title:"Wipe your Vercel account.",
+         sub:"Lists everything in your account or team and deletes only what you pick. Nothing leaves your browser." },
+    pt:{ eyebrow:"C\u00f3digo aberto \u00b7 roda no navegador", title:"Zere sua conta da Vercel.",
+         sub:"Lista tudo na sua conta ou time e apaga s\u00f3 o que voc\u00ea escolher. Nada sai do seu navegador." }
+  };
+  var q=(location.search.match(/lang=(\w+)/)||[])[1]||"en";
+  var d=D[q]||D.en;
+  document.getElementById("eyebrow").textContent=d.eyebrow;
+  document.getElementById("title").textContent=d.title;
+  document.getElementById("sub").textContent=d.sub;
+  document.getElementById("foot").textContent="vercel-nuke.vercel.app";
+  document.documentElement.setAttribute("data-ready","1");
+</script>
+</body>
+</html>
