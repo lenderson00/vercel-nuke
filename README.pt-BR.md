@@ -3,9 +3,9 @@
 [English](README.md) · [Português](README.pt-BR.md)
 
 [![Licença: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Deploy: Vercel](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)](https://vercel-nuke.vercel.app)
+[![Deploy: Vercel](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)](https://vercel-nuke.lenderson.com.br)
 [![Sem backend](https://img.shields.io/badge/backend-nenhum-informational)](#seguranca-e-privacidade)
-[![Roda no navegador](https://img.shields.io/badge/roda%20no-navegador-success)](https://vercel-nuke.vercel.app)
+[![Roda no navegador](https://img.shields.io/badge/roda%20no-navegador-success)](https://vercel-nuke.lenderson.com.br)
 [![i18n: PT | EN](https://img.shields.io/badge/i18n-PT%20%7C%20EN-orange)](#)
 [![Um arquivo HTML](https://img.shields.io/badge/um-arquivo%20HTML-lightgrey)](index.html)
 [![Estrelas no GitHub](https://img.shields.io/github/stars/lenderson00/vercel-nuke?style=social)](https://github.com/lenderson00/vercel-nuke/stargazers)
@@ -16,7 +16,7 @@ Zere uma conta ou time da Vercel direto do navegador. Lista tudo que você tem e
 
 ## Demo ao vivo
 
-https://vercel-nuke.vercel.app
+https://vercel-nuke.lenderson.com.br
 
 Use seu próprio token da Vercel. Nada fica guardado em nenhum servidor.
 

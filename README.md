@@ -3,9 +3,9 @@
 [English](README.md) · [Português](README.pt-BR.md)
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Deploy: Vercel](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)](https://vercel-nuke.vercel.app)
+[![Deploy: Vercel](https://img.shields.io/badge/deploy-Vercel-black?logo=vercel)](https://vercel-nuke.lenderson.com.br)
 [![Backend: none](https://img.shields.io/badge/backend-none-informational)](#security-and-privacy)
-[![Runs in your browser](https://img.shields.io/badge/runs%20in-your%20browser-success)](https://vercel-nuke.vercel.app)
+[![Runs in your browser](https://img.shields.io/badge/runs%20in-your%20browser-success)](https://vercel-nuke.lenderson.com.br)
 [![i18n: PT | EN](https://img.shields.io/badge/i18n-PT%20%7C%20EN-orange)](#)
 [![Single HTML file](https://img.shields.io/badge/single-HTML%20file-lightgrey)](index.html)
 [![GitHub stars](https://img.shields.io/github/stars/lenderson00/vercel-nuke?style=social)](https://github.com/lenderson00/vercel-nuke/stargazers)
@@ -16,7 +16,7 @@ Wipe a Vercel account or team from your browser. It lists everything you have an
 
 ## Live demo
 
-https://vercel-nuke.vercel.app
+https://vercel-nuke.lenderson.com.br
 
 Bring your own Vercel token. Nothing is stored on any server.
 
